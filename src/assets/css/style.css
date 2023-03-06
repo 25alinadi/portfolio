@@ -1,3 +1,4 @@
+@import "_variables.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,6 +21,66 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    background-color: var(--color-background);
     color: white;
+    line-height: 1.7;
+    background-image: url("../images/bg-texture.png") ;
+}
+
+section{
+    margin-top: 8rem;
+}
+
+section > h2, section > h5{
+    text-align: center;
+    color: var(--color-light);
+}
+
+section > h2, section > h5{
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+}
+
+.text-light{
+    color: var(--color-light);
+}
+
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: .75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid var(--color-primary);
+    transition: var(--transition);
+}
+
+.btn:hover{
+    background: var(--color-white);
+    color: var(--color-background);
+    border-color: transparent;
+}
+
+.btn-primary{
+    background: var(--color-primary);
+    color: var(--color-background);
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px){
+    section{
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    section{
+        margin-bottom: 2rem;
+    }
 }

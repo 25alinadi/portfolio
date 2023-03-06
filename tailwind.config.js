@@ -12,6 +12,7 @@ module.exports = {
         secondaryLight: "#FEB0C3",
         background: "#1f1f38",
         backgroundLight: "#2c2c6c",
+        light: "rgba(255,255,255,0.6)",
       },
       fontFamily : {
         vazir : ['Vazir', 'sans-serif']

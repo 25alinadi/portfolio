@@ -12,15 +12,17 @@ import Services from "./../components/services";
 const App:React.FC = () => {
     return(
         <React.Fragment>
-            <Header />
-            <Nav />
-            <About />
-            <Experience />
-            <Services />
-            <Portfolio />
-            <Testimonials />
-            <Contact />
-            <Footer />
+            <div className={"container mx-auto"}>
+                <Header />
+                <Nav />
+                <About />
+                <Experience />
+                <Services />
+                <Portfolio />
+                <Testimonials />
+                <Contact />
+                <Footer />
+            </div>
         </React.Fragment>
     )
 }
