@@ -1,14 +1,33 @@
 import React from "react";
 import CTA from "./CTA";
+import {AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail} from "react-icons/ai";
+// @ts-ignore
+import meImg from "../../assets/images/me.png"
 
 const Header:React.FC = () => {
     return(
         <header>
-            <div className={"container header__container text-center py-10"}>
-                <h5 className={"mb-2"}>Helli I'm</h5>
+            <div className={"container header__container text-center py-10 mb-10"}>
+                <h5 className={"mb-2"}>Hello, I'm</h5>
                 <h1 className={"text-4xl"}>Ali Nadi</h1>
                 <h5 className={"text-light mb-10"}>Fullstack Developer</h5>
                 <CTA />
+            </div>
+            <div className={"flex flex-row-reverse justify-around items-end"}>
+                <div className={"text-xs text-primary pb-7"}>
+                    <div className={"rotate-90"}>Scroll Down</div>
+                </div>
+                <div className={"w-[350px] h-[500px] bg-gradient-to-t from-background to-primary rounded-t-full pt-10"}>
+                    <img src={meImg} className={"w-full h-full object-contain drop-shadow-xl"} alt={"ali nadi"} />
+                </div>
+                <div>
+                    <ul className={"space-y-3 text-xl text-primary"}>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineLinkedin /></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineGithub /></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineInstagram /></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineMail /></li>
+                    </ul>
+                </div>
             </div>
         </header>
     )

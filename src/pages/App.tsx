@@ -19,7 +19,6 @@ const App:React.FC = () => {
                 <Experience />
                 <Services />
                 <Portfolio />
-                <Testimonials />
                 <Contact />
                 <Footer />
             </div>
