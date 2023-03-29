@@ -1,13 +1,13 @@
 import React from "react";
 import CTA from "./CTA";
-import {AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail} from "react-icons/ai";
+import {AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail, AiOutlineYoutube} from "react-icons/ai";
 // @ts-ignore
 import meImg from "../../assets/images/me.png"
 
 const Header:React.FC = () => {
     return(
-        <header>
-            <div className={"container header__container text-center py-10 mb-10"}>
+        <header className={"py-28 mb-14"}>
+            <div id={"home"} className={"container header__container text-center pb-14"}>
                 <h5 className={"mb-2"}>Hello, I'm</h5>
                 <h1 className={"text-4xl"}>Ali Nadi</h1>
                 <h5 className={"text-light mb-10"}>Fullstack Developer</h5>
@@ -25,6 +25,7 @@ const Header:React.FC = () => {
                         <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineLinkedin /></li>
                         <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineGithub /></li>
                         <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineInstagram /></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineYoutube /></li>
                         <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineMail /></li>
                     </ul>
                 </div>
