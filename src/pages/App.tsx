@@ -10,7 +10,7 @@ import Footer from "./../components/footer";
 const App:React.FC = () => {
     return(
         <React.Fragment>
-            <div className={"max-w-6xl mx-auto"}>
+            <div className={"max-w-7xl mx-auto px-4 sm:px-0"}>
                 <Header />
                 <Nav />
                 <About />

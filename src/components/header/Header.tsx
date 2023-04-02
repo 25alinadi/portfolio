@@ -6,21 +6,21 @@ import meImg from "../../assets/images/me.png"
 
 const Header:React.FC = () => {
     return(
-        <header className={"py-28 mb-14"}>
-            <div id={"home"} className={"container header__container text-center pb-14"}>
+        <div id={"home"} className={"py-28 mb-14"}>
+            <div className={"text-center pb-14"}>
                 <h5 className={"mb-2"}>Hello, I'm</h5>
                 <h1 className={"text-4xl"}>Ali Nadi</h1>
                 <h5 className={"text-light mb-10"}>Fullstack Developer</h5>
                 <CTA />
             </div>
             <div className={"flex flex-row-reverse justify-around items-end"}>
-                <div className={"text-xs text-primary pb-7"}>
+                <div className={"hidden md:block text-xs text-primary pb-7"}>
                     <div className={"rotate-90"}>Scroll Down</div>
                 </div>
                 <div className={"w-[350px] h-[500px] bg-gradient-to-t from-background to-primary rounded-t-full pt-10"}>
                     <img src={meImg} className={"w-full h-full object-contain drop-shadow-xl"} alt={"ali nadi"} />
                 </div>
-                <div>
+                <div className={"hidden md:block"}>
                     <ul className={"space-y-3 text-xl text-primary"}>
                         <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineLinkedin /></li>
                         <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineGithub /></li>
@@ -30,7 +30,7 @@ const Header:React.FC = () => {
                     </ul>
                 </div>
             </div>
-        </header>
+        </div>
     )
 }
 
