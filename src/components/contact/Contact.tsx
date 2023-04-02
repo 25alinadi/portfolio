@@ -3,6 +3,7 @@ import Section from "../Elements/Section";
 import {FaMedal, FaRegFolderOpen, FaUserFriends} from "react-icons/fa";
 import {AiOutlineMail, AiOutlineWhatsApp} from "react-icons/ai";
 import {FiPhoneCall} from "react-icons/fi";
+import {socialNetworkUrls, userInfo} from "../helpers/data";
 
 const Contact:React.FC = () => {
     return(
@@ -12,17 +13,17 @@ const Contact:React.FC = () => {
                     <li className={"bg-backgroundLight w-full h-48 flex flex-col justify-center items-center rounded-3xl drop-shadow mb-6"}>
                         <div className={"text-primary text-3xl mb-6"}><AiOutlineMail /></div>
                         <div className={"text-lg font-bold mb-1"}>Email</div>
-                        <a href={"mailto:alinadi14@gmail.com"}><div className={"text-light"}>alinadi14@gmail.com</div></a>
+                        <a href={`mailto:${socialNetworkUrls.email}`}><div className={"text-light"}>{socialNetworkUrls.email}</div></a>
                     </li>
                     <li className={"bg-backgroundLight w-full h-48 flex flex-col justify-center items-center rounded-3xl drop-shadow mb-6"}>
                         <div className={"text-primary text-3xl mb-6"}><FiPhoneCall /></div>
                         <div className={"text-lg font-bold mb-1"}>Mobile Number</div>
-                        <a href={"tel:09376264899"}><div className={"text-light"}>+98 937 626 4899</div></a>
+                        <a href={`tel:${userInfo.mobile}`}><div className={"text-light"}>{userInfo.mobile_txt}</div></a>
                     </li>
                     <li className={"bg-backgroundLight w-full h-48 flex flex-col justify-center items-center rounded-3xl drop-shadow mb-6"}>
                         <div className={"text-primary text-3xl mb-6"}><AiOutlineWhatsApp /></div>
                         <div className={"text-lg font-bold mb-1"}>WhatsApp</div>
-                        <div className={"text-light"}>+98 937 626 4899</div>
+                        <div className={"text-light"}>{userInfo.mobile_txt}</div>
                     </li>
                 </ul>
             </div>

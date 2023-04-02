@@ -4,6 +4,7 @@ import {FaMedal, FaRegFolderOpen, FaUserFriends} from "react-icons/fa";
 import Button from "../Elements/Button";
 // @ts-ignore
 import aboutImg from "../../assets/images/me-about.jpg"
+import {userInfo} from "../helpers/data";
 
 const About:React.FC = () => {
     return(
@@ -19,24 +20,25 @@ const About:React.FC = () => {
                         <li className={"bg-backgroundLight w-full h-40 md:h-48 flex flex-col justify-center items-center rounded-3xl drop-shadow"}>
                             <div className={"text-primary text-3xl mb-6"}><FaMedal /></div>
                             <div className={"text-lg font-bold mb-1"}>Experiences</div>
-                            <div className={"text-light"}>+6 Years Working</div>
+                            <div className={"text-light"}>{`${userInfo.experience_years} Working`}</div>
                         </li>
                         <li className={"bg-backgroundLight w-full h-40 md:h-48 flex flex-col justify-center items-center rounded-3xl drop-shadow"}>
                             <div className={"text-primary text-3xl mb-6"}><FaUserFriends /></div>
                             <div className={"text-lg font-bold mb-1"}>Clients</div>
-                            <div className={"text-light"}>+50 WorldWide</div>
+                            <div className={"text-light"}>{`${userInfo.clients} WorldWide`}</div>
                         </li>
                         <li className={"bg-backgroundLight w-full h-40 md:h-48 flex flex-col justify-center items-center rounded-3xl drop-shadow"}>
                             <div className={"text-primary text-3xl mb-6"}><FaRegFolderOpen /></div>
                             <div className={"text-lg font-bold mb-1"}>Projects</div>
-                            <div className={"text-light"}>+32 Completed</div>
+                            <div className={"text-light"}>{`${userInfo.projects} Completed`}</div>
                         </li>
                     </ul>
                     <div className={"text-justify text-light mb-10"}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <p>Hi guys</p>
+                        <p>{userInfo.about_txt}</p>
                     </div>
                     <div className={"text-center md:text-left"}>
-                        <Button btnTxt={"Let's Talk"} url={"#"} />
+                        <Button btnTxt={"Let's Talk"} url={"#contact"} />
                     </div>
                 </div>
             </div>

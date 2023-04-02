@@ -3,14 +3,15 @@ import CTA from "./CTA";
 import {AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail, AiOutlineYoutube} from "react-icons/ai";
 // @ts-ignore
 import meImg from "../../assets/images/me.png"
+import {socialNetworkUrls, userInfo} from "../helpers/data";
 
 const Header:React.FC = () => {
     return(
         <div id={"home"} className={"py-28 mb-14"}>
             <div className={"text-center pb-14"}>
                 <h5 className={"mb-2"}>Hello, I'm</h5>
-                <h1 className={"text-4xl"}>Ali Nadi</h1>
-                <h5 className={"text-light mb-10"}>Fullstack Developer</h5>
+                <h1 className={"text-4xl"}>{userInfo.first_name + " " + userInfo.last_name}</h1>
+                <h5 className={"text-light mb-10"}>{userInfo.skill}</h5>
                 <CTA />
             </div>
             <div className={"flex flex-row-reverse justify-around items-end"}>
@@ -22,11 +23,11 @@ const Header:React.FC = () => {
                 </div>
                 <div className={"hidden md:block"}>
                     <ul className={"space-y-3 text-xl text-primary"}>
-                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineLinkedin /></li>
-                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineGithub /></li>
-                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineInstagram /></li>
-                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineYoutube /></li>
-                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><AiOutlineMail /></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><a href={socialNetworkUrls.linkedIn} target={"_blank"}><AiOutlineLinkedin /></a></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><a href={socialNetworkUrls.github} target={"_blank"}><AiOutlineGithub /></a></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><a href={socialNetworkUrls.instagram} target={"_blank"}><AiOutlineInstagram /></a></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><a href={socialNetworkUrls.youtube} target={"_blank"}><AiOutlineYoutube /></a></li>
+                        <li className={"cursor-pointer transition duration-200 hover:text-white"}><a href={`mailto:${socialNetworkUrls.email}`} target={"_blank"}><AiOutlineMail /></a></li>
                     </ul>
                 </div>
             </div>
