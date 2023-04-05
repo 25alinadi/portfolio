@@ -6,12 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#4db5ff",
-        primaryLight: "rgba(77,181,255,0.4)",
+        primary: "#9fd3c7",
+        primaryLight: "rgba(159,211,199,0.4)",
         secondary: "#FC3968",
         secondaryLight: "#FEB0C3",
-        background: "#1f1f38",
-        backgroundLight: "#2c2c6c",
+        background: "#142d4c",
+        backgroundLight: "#385170",
         light: "rgba(255,255,255,0.6)",
       },
       fontFamily : {
