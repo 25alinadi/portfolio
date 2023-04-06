@@ -1,4 +1,5 @@
 import {GradeType} from "./enumType";
+import {PortfolioData} from "../contract/data/portfolio";
 
 export const userInfo = {
     first_name: 'Ali',
@@ -74,4 +75,14 @@ export const skillsList = [
             {title: "Docker", grade: GradeType.Familiar},
         ]
     },
+]
+
+export const portfolioList:Array<PortfolioData> = [
+    {
+        title: 'ShatootMarket Website',
+        cover: "https://alinadi.ir/project/shatoot/shatoot_cover.png",
+        tags: ['Python', 'Django', 'ReactJs', 'nextJs', 'Tailwind', 'PWA', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component'],
+        linkUrl: "https://shatootmarket.com/",
+        githubUrl: null
+    }
 ]
