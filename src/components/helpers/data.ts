@@ -80,9 +80,58 @@ export const skillsList = [
 export const portfolioList:Array<PortfolioData> = [
     {
         title: 'ShatootMarket Website',
-        cover: "https://alinadi.ir/project/shatoot/shatoot_cover.png",
-        tags: ['Python', 'Django', 'ReactJs', 'nextJs', 'Tailwind', 'PWA', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component'],
+        cover: "/images/projects/shatoot_website.png",
+        tags: ['Python', 'Django', 'ReactJs', 'nextJs', 'Tailwind', 'PWA', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component', 'Postgres', 'RabbitMq'],
         linkUrl: "https://shatootmarket.com/",
         githubUrl: null
-    }
+    },
+    {
+        title: 'ShatootMarket Application',
+        cover: "/images/projects/shatoot_app.jpg",
+        tags: ['Dart', 'Flutter', 'Android', 'IOS'],
+        linkUrl: "https://cafebazaar.ir/app/ir.shatootmarket.market?l=en",
+        githubUrl: null
+    },
+    {
+        title: 'Vemy',
+        cover: "/images/projects/vemy.jpg",
+        tags: ['Python', 'Django', 'ReactJs', 'Bootstrap', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component'],
+        linkUrl: null,
+        githubUrl: null
+    },
+    {
+        title: 'Koalyzer',
+        cover: "/images/projects/koalyzer.jpg",
+        tags: ['Python', 'Django', 'ReactJs', 'Bootstrap', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component'],
+        linkUrl: null,
+        githubUrl: null
+    },
+    {
+        title: 'Dabno',
+        cover: "/images/projects/dobno.jpg",
+        tags: ['PHP', 'Laravel', 'VueJs', 'Bootstrap', 'HTML', 'CSS', 'javascript', 'jQuery', 'MySql'],
+        linkUrl: null,
+        githubUrl: null
+    },
+    {
+        title: 'Asaplus',
+        cover: "/images/projects/asaplus.jpg",
+        tags: ['PHP', 'Laravel', 'Bootstrap', 'HTML', 'CSS', 'javascript', 'jQuery', 'MySql'],
+        linkUrl: null,
+        githubUrl: null
+    },
+    {
+        title: 'Asasarmaye',
+        cover: "/images/projects/asasarmaye.jpg",
+        tags: ['PHP', 'Wordpress', 'Custom_Plugin', 'Custom_Template', 'bootstrap', 'HTML', 'CSS', 'javascript', 'jQuery'],
+        linkUrl: "https://asasarmaye.com/",
+        githubUrl: null
+    },
+    {
+        title: 'Asainvestmentco',
+        cover: "/images/projects/asainvestmentco.jpg",
+        tags: ['PHP', 'Wordpress', 'Elementor', 'Bootstrap', 'HTML', 'CSS', 'javascript', 'jQuery'],
+        linkUrl: "https://asainvestmentco.com/",
+        githubUrl: null
+    },
 ]

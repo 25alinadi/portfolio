@@ -25,7 +25,7 @@ const PortfolioItem:React.FC<{item: PortfolioData}> = ({item}) => {
             </div>
             <div className={"text-left w-full"}>
                 {/*<Button btnTxt={"Github"} url={"#"} isPrimary={true} />*/}
-                <Button btnTxt={"Live Demo"} url={item.linkUrl !== null ? item.linkUrl : "#"} />
+                {item.linkUrl && <Button btnTxt={"Live Demo"} url={item.linkUrl !== null ? item.linkUrl : "#"} />}
             </div>
         </div>
     )
