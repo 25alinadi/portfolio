@@ -81,7 +81,7 @@ export const portfolioList:Array<PortfolioData> = [
     {
         title: 'ShatootMarket Website',
         cover: "/images/projects/shatoot_website.png",
-        tags: ['Python', 'Django', 'ReactJs', 'nextJs', 'Tailwind', 'PWA', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component', 'Postgres', 'RabbitMq'],
+        tags: ['Python', 'Django', 'ReactJs', 'nextJs', 'Tailwind', 'PWA', 'HTML', 'CSS', 'javascript', 'jQuery', 'Styled-Component'],
         linkUrl: "https://shatootmarket.com/",
         githubUrl: null
     },
