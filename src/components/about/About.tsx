@@ -3,7 +3,7 @@ import Section from "../Elements/Section";
 import {FaMedal, FaRegFolderOpen, FaUserFriends} from "react-icons/fa";
 import Button from "../Elements/Button";
 // @ts-ignore
-import aboutImg from "../../assets/images/me-about.jpg"
+import aboutImg from "../../assets/images/pic-about.png"
 import {userInfo} from "../helpers/data";
 
 const About:React.FC = () => {

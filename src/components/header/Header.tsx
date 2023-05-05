@@ -2,7 +2,7 @@ import React from "react";
 import CTA from "./CTA";
 import {AiOutlineGithub, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineMail, AiOutlineYoutube} from "react-icons/ai";
 // @ts-ignore
-import meImg from "../../assets/images/me.png"
+import meImg from "../../assets/images/pic.png"
 import {socialNetworkUrls, userInfo} from "../helpers/data";
 
 const Header:React.FC = () => {
